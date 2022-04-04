@@ -14,5 +14,4 @@ if readme:
 st.write("The datasets is from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)")
 
 data = pd.read_csv("https://raw.githubusercontent.com/Shahirrrr/Health/main/heart.csv")
-X = data.data
-y = data.target
+data
