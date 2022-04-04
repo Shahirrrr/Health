@@ -5,7 +5,6 @@ import time
 
 from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.svm import SVC
@@ -24,7 +23,7 @@ if readme:
 
 st.write("The datasets is from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)")
 
-data = datasets.load_heart()
+data = pd.read_csv("https://raw.githubusercontent.com/Shahirrrr/Health/main/heart.csv")
 X = data.data
 y = data.target
 
