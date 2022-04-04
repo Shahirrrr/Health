@@ -12,11 +12,12 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 
-st.header("Web App Developed by ShahirCheSoh")
+st.header("Welcome to my Streamlit [Machine Learning]")
+st.write("In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest)
 readme = st.checkbox("More Information")
 if readme:
     st.write("""
-        This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted on [heroku](https://www.heroku.com/). You may get the codes via [github](https://github.com/richieyuyongpoh/myfirstapp)
+        This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted on [heroku](https://www.heroku.com/). You may get the codes via [github](https://github.com/Shahirrrr/Health)
         """)
     st.write ("Contact me at LinkedIn:")
     st.write("<a href='https://www.linkedin.com/in/shahir-chesoh-1392b1204/'>ShahirCheSoh </a>", unsafe_allow_html=True)
@@ -107,37 +108,7 @@ if len(X)!=0 and len(y)!=0:
 
 else: 
    st.write("<font color='Aquamarine'>Note: No classification report generated.</font>", unsafe_allow_html=True)
-
-st.write("## 4: Principal Component Analysis Plot")
-suitable = 1
-if len(X_names) <2:
-  st.write("<font color='Aquamarine'>Note: No PCA plot as it requires at least two predictors.</font>", unsafe_allow_html=True)
-  suitable = 0
-else:
-    for names in X_names:
-        if names in cat_var:
-           st.write("<font color='Aquamarine'>Note: No PCA plot as it only supports numerical predictors.</font>", unsafe_allow_html=True)
-           suitable = 0
-           break
-
-if suitable == 1:
-   pca = PCA(2)
-   X_projected = pca.fit_transform(X)
-
-   x1 = X_projected[:, 0]
-   x2 = X_projected[:, 1]
-
-   fig = plt.figure()
-   plt.scatter(x1, x2,
-               c=y, alpha=0.8,
-               cmap='viridis')
-
-   plt.xlabel('Principal Component 1')
-   plt.ylabel('Principal Component 2')
-   plt.colorbar()
-   st.pyplot(fig)
-            
-            
+        
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
