@@ -4,7 +4,7 @@ import pandas as pd
 
 from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
+#from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.svm import SVC
@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 
 st.header("Welcome to my Streamlit [Machine Learning]")
-st.header("In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest")
+st.header("###In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest")
 readme = st.checkbox("More Information")
 if readme:
     st.write("""
