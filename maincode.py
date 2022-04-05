@@ -14,9 +14,7 @@ from sklearn.metrics import classification_report
 
 st.header("Welcome to my Streamlit [Machine Learning]")
 st.write("In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest")
-image=pd.read_image(r'istockphoto-1086464148-640x640.jpg')
-image
-st.image(r"![istockphoto-1086464148-640x640](https://user-images.githubusercontent.com/86062534/161854388-6d331657-01f8-42bf-bf40-ad716c9461d1.jpg)")
+st.image("istockphoto-1086464148-640x640.jpg")
 readme = st.checkbox("More Information")
 if readme:
     st.write("""
