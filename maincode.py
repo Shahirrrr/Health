@@ -13,7 +13,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 
 st.header("Welcome to my Streamlit [Machine Learning]")
-st.header("###In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest")
+st.write("In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest")
+
 readme = st.checkbox("More Information")
 if readme:
     st.write("""
