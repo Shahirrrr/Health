@@ -14,7 +14,7 @@ from sklearn.metrics import classification_report
 
 st.header("Welcome to my Streamlit [Machine Learning]")
 st.write("In this WebApp, I will demonstrate 3 types of Machine Learning which are k-Nearest Neighbors, Support Vector Machine (SVM) and Random Forest")
-
+#st.image("")
 readme = st.checkbox("More Information")
 if readme:
     st.write("""
